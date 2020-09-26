@@ -9,7 +9,7 @@ pages = pdfReader.numPages # total no of pages
 
 speaker = pyttsx3.init()  # initializing / creating an object
 
-voices = speaker.getProperty('voices')       #getting details of current voice
+voices = speaker.getProperty('voices')       #getting details of available voices
 #speaker.setProperty('voice', voices[0].id)  #changing index, changes voices. o for male
 speaker.setProperty('voice', voices[1].id)   #changing index, changes voices. 1 for female
 
