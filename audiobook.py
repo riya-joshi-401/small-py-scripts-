@@ -18,7 +18,7 @@ print(rate)                        #printing current voice rate
 speaker.setProperty('rate', 125)     # setting up new voice rate
 
 
-for num in range(4,5): # looping through all the pages of the document file / book
+for num in range(pages): # looping through all the pages of the document file / book
     
     page = pdfReader.getPage(num)
     text = page.extractText()
