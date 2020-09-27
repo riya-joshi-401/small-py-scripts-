@@ -1,7 +1,7 @@
 import pyttsx3 # text-to-speech conversion library
 import PyPDF2  # library built as a PDF toolkit
 
-book = open('the exorcist.pdf', 'rb') # opening a fle  for reading in binary mode
+book = open('the exorcist.pdf', 'rb') # opening a file  for reading in binary mode
 
 pdfReader = PyPDF2.PdfFileReader(book)
 
@@ -23,7 +23,7 @@ for num in range(pages): # looping through all the pages of the document file / 
     page = pdfReader.getPage(num)
     text = page.extractText()
     speaker.say(text)
-    speaker.save_to_file(text, 'test.mp3')
+    speaker.save_to_file(text, 'test.mp3') # saving the audio
     speaker.runAndWait()
 
 speaker.stop()
