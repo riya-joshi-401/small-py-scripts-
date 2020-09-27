@@ -1,11 +1,11 @@
 import pyttsx3 # text-to-speech conversion library
 import PyPDF2  # library built as a PDF toolkit
 
-book = open('the exorcist.pdf', 'rb') # opening a file  for reading in binary mode
+book = open('the exorcist.pdf', 'rb') # opening a file  for reading in binary mode ( also its creating a pdf file object)
 
-pdfReader = PyPDF2.PdfFileReader(book)
+pdfReader = PyPDF2.PdfFileReader(book) # creating a pdf reader object.
 
-pages = pdfReader.numPages # total no of pages
+pages = pdfReader.numPages # total no of pages in the pdf file
 
 speaker = pyttsx3.init()  # initializing / creating an object
 
