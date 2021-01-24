@@ -35,3 +35,5 @@ for i in range(0,n):
     ys.download()
     print("\nDownload completed!!")
     print()
+
+    # this will download the video/s in the current working directory
